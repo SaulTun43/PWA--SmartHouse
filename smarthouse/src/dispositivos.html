@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6200ee" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Contacto">
+
+    <!-- third party css -->
+    <link href="https://coderthemes.com/hyper/creative/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- third party css end -->
+
+    <!-- App css -->
+    <link href="https://coderthemes.com/hyper/creative/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://coderthemes.com/hyper/creative/assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="https://coderthemes.com/hyper/creative/assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+    <!-- Bootstrap CSS 
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="apple-touch-icon" href="img/camera192.png">
+	<title>Dispositivos</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1" href="dashboard.html">Dispositivos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="me-auto"></div>
+                <div class="flex">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuartos.html">Cuartos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-3">Mis dispositivos</h1>
+        <hr>
+    </div>
+
+    <div class="container">
+
+    	<div class="modal fade" id="modalContactos" tabindex="-1" aria-labelledby="infoContactos" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoContactos">Agregar un dispositivo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        	<div class="mb-3">
+                                <label for="nombre" class="col-form-label">Codigo ID:</label>
+                                <input type="text" class="form-control" id="id">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombre" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="col-form-label">Cuarto al que pertenece:</label>
+                                <select name="cuartos" id="cuartos">
+                                    <option value="">Sala</option>
+                                    <option value="">Comedor</option>
+                                    <option value="">Baño</option>
+                                    <option value="">Cocina</option> 
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    	<ul class="list-group list-group-flush lista-atras overflow-auto">
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Codigo ID: 016244</div><div>Nombre: Sensor Temperatura 1</div> Cuarto al que pertenece: Sala
+                </div>
+
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" >
+                    edit
+                    </span>
+                    </a>
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" style="color: tomato;">
+                    delete
+                    </span></a>
+            </li>
+
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Codigo ID: 046721</div><div>Nombre: Sensor Temperatura 2</div> Cuarto al que pertenece: Comedor
+                </div>
+
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" >
+                    edit
+                    </span>
+                    </a>
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" style="color: tomato;">
+                    delete
+                    </span></a>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Codigo ID: 046721</div><div>Nombre: Sensor Temperatura 3</div> Cuarto al que pertenece: Baño
+                </div>
+
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" >
+                    edit
+                    </span>
+                    </a>
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" style="color: tomato;">
+                    delete
+                    </span></a>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Codigo ID: 046721</div><div>Nombre: Sensor Temperatura 4</div> Cuarto al que pertenece: Cocina
+                </div>
+
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" >
+                    edit
+                    </span>
+                    </a>
+                <a class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalContactos"><span class="material-icons" style="color: tomato;">
+                    delete
+                    </span></a>
+            </li>
+
+
+
+
+
+        </ul>
+
+        <div class="d-grid gap-2 boton-flotante">
+            <button type="button" class="btn btn-primary btn-lg boton-flotante-centro" data-bs-toggle="modal"
+                data-bs-target="#modalContactos">AGREGAR</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- bundle -->
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor/apexcharts.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- third party js ends -->
+
+</body>
+</html>

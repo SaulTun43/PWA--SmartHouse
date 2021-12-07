@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="https://coderthemes.com/hyper/creative/assets/images/favicon.ico">
+
+     <!-- PWA Manifest -->
+     <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+     <link rel="apple-touch-icon" href="img/camera192.png">
+
+        <!-- App css -->
+        <link href="https://coderthemes.com/hyper/creative/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://coderthemes.com/hyper/creative/assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="https://coderthemes.com/hyper/creative/assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+</head>
+<body class="authentication-bg pb-0" data-layout-config='{"darkMode":false}'>
+
+    <div class="auth-fluid">
+        <!--Auth fluid left content -->
+        <div class="auth-fluid-form-box">
+            <div class="align-items-center d-flex h-100">
+                <div class="card-body">
+
+
+
+                    <!-- title-->
+                    <h4 class="mt-0">Inicio de Sesion</h4>
+                    <p class="text-muted mb-4">Ingrese su correo y contraseña para acceder a la plataforma</p>
+
+                    <!-- form -->
+                    <form action="dashboard.html">
+                        <div class="mb-3">
+                            <label for="emailaddress" class="form-label">correo</label>
+                            <input class="form-control" type="email" id="emailaddress" required="" placeholder="Ingrese su email">
+                        </div>
+                        <div class="mb-3">
+                            <a href="" class="text-muted float-end"><small>Olvido su contraseña?</small></a>
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input class="form-control" type="password" required="" id="password" placeholder="Ingrese su contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="checkbox-signin">
+                                <label class="form-check-label" for="checkbox-signin">Recordarme</label>
+                            </div>
+                        </div>
+                        <div class="d-grid mb-0 text-center">
+                           <button class="btn btn-primary" type="submit"><i class="fas fa-sign-in-alt"></i> Ingresar </button>
+                        </div>
+                        <!-- social-->
+                        <div class="text-center mt-4">
+                            <p class="text-muted font-16">Inicia Sesion con</p>
+                            <ul class="social-list list-inline mt-3">
+                                <li class="list-inline-item">
+                                    <a class="social-list-item border-primary text-primary"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-list-item border-danger text-danger"><i class="fab fa-google"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-list-item border-info text-info"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="social-list-item border-secondary text-secondary"><i class="fab fa-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                    <!-- end form-->
+
+                    <!-- Footer-->
+                    <footer class="footer footer-alt">
+                        <p class="text-muted">No tienes una cuenta? <a href="" class="text-muted ms-1"><b>Registrate</b></a></p>
+                    </footer>
+
+                </div> <!-- end .card-body -->
+            </div> <!-- end .align-items-center.d-flex.h-100-->
+        </div>
+        <!-- end auth-fluid-form-box-->
+
+        <!-- Auth fluid right content -->
+        <div class="auth-fluid-right text-center">
+            <div class="auth-user-testimonial">
+                <h2 class="mb-3">Me encanta la plataforma!</h2>
+                <p class="lead"><i class="fas fa-quote-left"></i> Es practico y facil de usar! . <i class="fas fa-quote-right"></i>
+                </p>
+                <p>
+                    - Usuario de SmartHouse
+                </p>
+            </div> <!-- end auth-user-testimonial-->
+        </div>
+        <!-- end Auth fluid right content -->
+    </div>
+    <!-- end auth-fluid-->
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+    <!-- bundle -->
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/app.min.js"></script>
+
+</body>
+</html>

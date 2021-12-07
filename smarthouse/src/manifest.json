@@ -1,0 +1,33 @@
+{
+  "name": "SmartHouse",
+  "short_name": "SmartHouse",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#333333",
+  "theme_color": "#6200ee",
+  "lang": "es-MX",
+  "orientation": "portrait",
+  "description": "Administra tus dispositivos inteligentes",
+  "icons": [{
+    "src": "img/sm128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "img/sm192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },{
+      "src": "img/sm256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+      },{
+      "src": "img/sm512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }, {
+      "src": "img/sm640.png",
+      "sizes": "640x640",
+      "type": "image/png"
+    }]
+  }

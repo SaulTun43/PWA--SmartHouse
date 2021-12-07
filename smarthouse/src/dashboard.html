@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6200ee" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Contacto">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+    
+    <!-- third party css -->
+    <link href="https://coderthemes.com/hyper/creative/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- third party css end -->
+
+    <!-- App css -->
+    <link href="https://coderthemes.com/hyper/creative/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://coderthemes.com/hyper/creative/assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="https://coderthemes.com/hyper/creative/assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+    <!-- Bootstrap CSS -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="apple-touch-icon" href="img/camera192.png">
+    <title>SmartHouse</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1" href="dashboard.html">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="me-auto"></div>
+                <div class="flex">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuartos.html">Cuartos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dispositivos.html">Dispositivos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="temperatura.html">Limite de temperatura</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <form class="d-flex" action="./consumo.html">
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-light" id="dash-daterange">
+                            
+                            <span class="input-group-text bg-info border-info text-white">
+                                
+                                <span class="material-icons">
+                                    date_range
+                                    </span>
+                            </span>
+                            
+                        </div>
+                        <a href="consumo.html" class="btn btn-info ms-2">
+                            <i class="fas fa-dollar-sign"></i>
+                        </a>
+                    </form>
+                </div>
+                <div class="container">
+                    <h1 class="mt-3">Estadisticas</h1>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-6">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card widget-flat">
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span class="material-icons widget-icon bg-success-lighten text-success">
+                                    visibility
+                                </span>
+                            </div>
+                            <h5 class="text-muted fw-normal mt-0" title="Sala">Sala</h5>
+                            <h3 class="mt-3 mb-3">25°</h3>
+                            <p class="mb-0 text-muted">
+                                <span class="text-success">
+                                    <span class="material-icons">
+                                        keyboard_arrow_down
+                                        </span>
+                                     27°</span>
+                                <span class="text-nowrap">La semana pasada</span>  
+                            </p>
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div> <!-- end col-->
+
+                <div class="col-lg-6">
+                    <div class="card widget-flat">
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span class="material-icons widget-icon bg-success-lighten text-success">
+                                    visibility
+                                </span>
+                            </div>
+                            <h5 class="text-muted fw-normal mt-0" title="Comedor">Comedor</h5>
+                            <h3 class="mt-3 mb-3">29°</h3>
+                            <p class="mb-0 text-muted">
+                                <span class="text-danger me-2">
+                                    <span class="material-icons">
+                                        keyboard_arrow_up
+                                        </span>
+                                    </i> 27°</span>
+                                <span class="text-nowrap">La semana pasada</span>
+                            </p>
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div> <!-- end col-->
+            </div> <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card widget-flat">
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span class="material-icons widget-icon bg-success-lighten text-success">
+                                    visibility
+                                </span>
+                            </div>
+                            <h5 class="text-muted fw-normal mt-0" title="Baño">Baño</h5>
+                            <h3 class="mt-3 mb-3">28°</h3>
+                            <p class="mb-0 text-muted">
+                                <span class="text-warning"><span class="material-icons">
+                                    horizontal_rule
+                                    </span>
+                                    </i>28°</span>
+                                <span class="text-nowrap">La semana pasada</span>
+                            </p>
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div> <!-- end col-->
+
+                <div class="col-lg-6">
+                    <div class="card widget-flat">
+                        <div class="card-body">
+                            <div class="float-end">
+                                <span class="material-icons widget-icon bg-success-lighten text-success">
+                                    visibility
+                                </span>
+                            </div>
+                            <h5 class="text-muted fw-normal mt-0" title="Cocina">Cocina</h5>
+                            <h3 class="mt-3 mb-3">31°</h3>
+                            <p class="mb-0 text-muted">
+                                <span class="text-danger me-2"><span class="material-icons">
+                                    keyboard_arrow_up
+                                    </span>30°</span>
+                                <span class="text-nowrap">La semana pasada</span>
+                            </p>
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                </div> <!-- end col-->
+            </div> <!-- end row -->
+
+        </div> <!-- end col -->
+
+    </div>
+
+    <div>
+        <table class="charts-css column show-data-axes datasets-spacing-10 column hide-data show-labels" style="height: 200px;">
+
+            <caption> Front End Developer Salary </caption>
+          
+            <tbody>
+              <tr>
+                <th scope="row"> Sala </th>
+                <td style="--size: calc( 25 / 50 ); --color:rgb(169, 238, 255);">25°</td>
+              </tr>
+              <tr>
+                <th scope="row"> Comedor </th>
+                <td style="--size: calc( 29 / 50 ); --color: rgb(250, 219, 162);">29°</td>
+              </tr>
+              <tr>
+                <th scope="row"> Baño </th>
+                <td style="--size: calc( 28 / 50 ); --color: rgb(250, 219, 162);">28°</td>
+              </tr>
+              <tr>
+                <th scope="row"> Cocina </th>
+                <td style="--size: calc( 31 / 50 ); --color: rgb(247, 104, 104);"><label style="color: white;">31°</label></td>
+              </tr>
+
+            </tbody>
+          
+          </table>
+    </div>
+    
+
+</div>
+    
+    <div class="container">
+        <hr>
+        <div class="modal fade" id="modalContactos" tabindex="-1" aria-labelledby="infoContactos" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoContactos">Información de contacto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="col-form-label">Teléfono:</label>
+                                <input type="tel" class="form-control" id="nombre">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- bundle -->
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/app.min.js"></script>
+
+    <!-- third party js -->
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor/apexcharts.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="https://coderthemes.com/hyper/creative/assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- third party js ends -->
+
+    <!-- demo app -->
+    <script src="https://coderthemes.com/hyper/creative/assets/js/pages/demo.dashboard.js"></script>
+    <!-- end demo js-->
+
+    
+
+</body>
+
+
+</html>
